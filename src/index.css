@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: "Noto Serif SC", "Songti SC", "SimSun", serif;
+    --font-calligraphy: "Ma Shan Zheng", cursive;
+    --font-cinzel: "Cinzel", serif;
+  }
+
+  body {
+    font-family: var(--font-serif);
+    background-color: #FAF7F2;
+    color: #1C1917;
+  }
+}
+
+/* Custom classical scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4EFE6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D6CEBE;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B91C1C;
+}
+
+/* Antique Xuan paper texture & subtle ink gradients */
+.xuan-paper-bg {
+  background-color: #FAF7F2;
+  background-image: 
+    radial-gradient(#E8E0D0 0.75px, transparent 0.75px),
+    radial-gradient(#E8E0D0 0.75px, #FAF7F2 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.xuan-card {
+  background: #FFFFFF;
+  border: 1px solid #EBE4D8;
+  box-shadow: 0 1px 3px 0 rgba(76, 56, 32, 0.04);
+}
+
+.xuan-card-antique {
+  background: #F7F3EB;
+  border: 1px solid #E5DDCF;
+}
+
+/* Vertical Chinese text layout */
+.writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 0.25em;
+}
+
+/* Chinese Seal Stamp Style */
+.vermillion-seal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #991B1B;
+  color: #991B1B;
+  font-family: var(--font-calligraphy);
+  background: rgba(185, 28, 28, 0.04);
+}

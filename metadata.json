@@ -1,0 +1,6 @@
+{
+  "name": "中华历代帝王长卷",
+  "description": "中国历代帝王编年史长卷、朝代更迭世系图谱与五维能力跨时空风云对决",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
